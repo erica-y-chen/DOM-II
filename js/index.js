@@ -41,4 +41,19 @@ headerContainer.addEventListener('wheel', function(){
 });
 
 
-//
+//drag and drop //#endregion
+
+//selector for text 
+const adventureText = document.querySelectorAll('.text-content');
+const adventureContainer = document.querySelectorAll('.content-section');
+const adventureImage = document.querySelectorAll('.img-content');
+console.log(adventureImage);
+
+adventureImage[0].addEventListener('drag', function(){
+    adventureContainer[0].style.flexDirection = "row-reverse";
+});
+
+
+adventureImage[1].addEventListener('dblclick', function(){
+    adventureContainer[1].style.flexDirection = "row-reverse";
+});
